@@ -1,0 +1,12 @@
+{% load static %}
+<section class='content-section content-section-single'>
+    <div class="content-container">
+        <h3 class="content-title">เข้าสู่ระบบ</h3>
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>
+                <button calss="button bumtton-primary" type="submit">เข้าสู่ระบบ</button>
+        </form>
+    </div>
+</section>
